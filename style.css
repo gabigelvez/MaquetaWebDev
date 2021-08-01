@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+html {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Barlow Condensed', sans-serif;
+     font-size: 17px;
+
+}
+
+*,
+*::before,
+*::after {
+          box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(0deg, rgba(195,34,34,1) 12%, rgba(195,34,34,1) 29%, rgba(195,34,34,1) 45%, rgba(0,0,0,1) 99%);
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+/*--------------------------------------HEADER------------------------------------*/
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px rgba(151, 28, 28, 0.4);
+    margin: 0;
+    background: #161616;
+    
+}
+.navBar a{
+    letter-spacing: 2px; 
+    color: #D32626;
+    text-decoration: none;
+  
+}
+
+.navBar a:hover {
+        color: #d3a526;
+    
+}
+
+.list {
+    font-weight: bold;
+    list-style: none;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    color: #D32626;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 4px;
+}
+
+/*-------------------------Portada-------------------------------------------------------------*/
+
+.portada {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 70px;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.boton1 {
+    font-weight: bold;
+    background: #752626;
+    border: none;
+    border-radius: 7px;
+    padding: 8px; 
+    margin: 20px; 
+}
+
+.boton2 {
+    
+    font-weight: bold;
+    background: #161616;
+    border: none;
+    border-radius: 7px;
+    padding: 8px; 
+    margin: 20px; 
+}
+
+.boton1 a {
+    text-decoration: none;
+    color: #d3a526;
+}
+
+.boton2 a {
+    text-decoration: none;
+    color: #d3a526;
+}
+
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.img>img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+/*--------------------------------Ventajas--------------------------------------*/
+
+.introYventajas {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid rgba(126, 120, 120, 0.774) 2px;
+    border-bottom: solid rgba(126, 120, 120, 0.774) 2px;
+
+}
+
+.introP {
+    text-align: center;
+    width: 400px;
+}
+
+.ventajas h2 {
+    text-align: center;
+}
+
+.ventajas p {
+    text-align: center;
+}
+
+.ventajas {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-ventajas {
+    display: flex;
+    text-align: center;
+}
+
+.ventaja {
+    margin: 20px;
+}
+
+.iconoventaja  {
+    color: #1f89cf;
+}
+
+/*------------------------------como trabajamos---------------------------------*/
+
+.howwework {
+    
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: solid rgba(126, 120, 120, 0.774) 2px;
+}
+
+/*----------------------------------------Clients-------------------*/
+
+.clients {
+    padding: 20px;
+    border-bottom: solid rgba(126, 120, 120, 0.774) 2px ;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    'h2 h2 h2 h2'
+    'p p p p '
+    'icono1 icono2 icono3 icono4'
+
+    ;
+}
+
+.clients h2 {
+    grid-area: h2;
+}
+
+.clients p {
+    grid-area: p;
+}
+
+.icono-ps i {
+    color: rgb(10, 10, 185);
+    font-size: 60px;
+    grid-area: icono1;
+}
+
+.icono-steam i {
+    color: rgb(33, 33, 109);
+    font-size: 60px;
+    grid-area: icono2;
+}
+
+.icono-xbox i {
+    color: rgb(97, 185, 8);
+    font-size: 60px;
+    grid-area: icono3;
+}
+
+.icono-twitch i {
+    font-size: 60px;
+    grid-area: icono4;
+}
+
+/*--------------------------------------Contacto-----------------------*/
+
+.contact {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'titulo titulo'
+    'card map'
+    ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: solid 2px rgba(0, 0, 0, 0.472);
+    box-shadow: 5px 5px 15px 5px #000000;
+    border-radius: 8px;
+}
+
+.contact-card {
+    grid-area: card;
+}
+
+.map {
+    grid-area: map;
+}
+
+.direccion1 ul, .direccion2 ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.direccion2 li, .direccion1 li {
+    margin: 10px;
+
+}
+
+.direccion1 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.direccion2 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Contacto {
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(17, 110, 64);
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
